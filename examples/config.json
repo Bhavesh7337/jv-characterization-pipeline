@@ -1,0 +1,21 @@
+{
+  "input": {
+    "current_density_unit": "mA/cm2",
+    "recursive": false
+  },
+  "measurement": {
+    "incident_power_mw_cm2": 100.0
+  },
+  "thresholds": {
+    "voc_min_v": 0.5,
+    "jsc_min_ma_cm2": 10.0,
+    "ff_min": 0.6,
+    "pce_min_percent": 8.0,
+    "rs_max_ohm_cm2": 20.0,
+    "rsh_min_ohm_cm2": 300.0,
+    "hysteresis_index_max": 0.1,
+    "s_kink_score_max": 0.18,
+    "rf_anomaly_probability_min": 0.6
+  }
+}
+

@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jv-characterization"
+version = "0.1.0"
+description = "Photovoltaic J-V characterization and anomaly screening"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "matplotlib>=3.7,<4",
+  "numpy>=1.24,<3",
+  "pandas>=2,<4",
+  "scipy>=1.10,<2",
+]
+
+[project.optional-dependencies]
+ml = ["scikit-learn>=1.3,<2"]
+
+[project.scripts]
+jv-characterize = "jv_characterization.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
